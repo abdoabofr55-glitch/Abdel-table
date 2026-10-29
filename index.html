@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Libyan family recipes made with care at Abdel’s Table in Calgary.">
+  <title>Abdel’s Table | Calgary</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/olive-branch.svg" alt="">Abdel’s Table</a>
+    <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="menu.html">Menu</a></nav>
+  </header>
+  <main class="home-main">
+    <section class="hero">
+      <p class="eyebrow">FAMILY RECIPES · CALGARY</p>
+      <h1>From our family kitchen to your table.</h1>
+      <a class="button" href="menu.html">See the menu <span aria-hidden="true">→</span></a>
+      <img class="city-art" src="assets/calgary-sketch.svg" alt="Line drawing of the Calgary skyline">
+    </section>
+    <section class="carousel" aria-label="Restaurant pictures">
+      <div class="carousel-picture" id="carousel-picture" role="img" aria-label="A meal at Abdel’s Table"></div>
+      <div class="carousel-caption"><p>Good food, around one table.</p></div>
+      <button class="carousel-arrow previous" id="previous-slide" type="button" aria-label="Previous picture">‹</button>
+      <button class="carousel-arrow next" id="next-slide" type="button" aria-label="Next picture">›</button>
+    </section>
+    <div class="carousel-controls">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <button class="text-button" id="pause-carousel" type="button">Pause slideshow</button>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-weather"><span>📍 Calgary, AB</span><span id="weather">Weather loading…</span><span id="clock">Calgary time loading…</span></div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Abdel’s Table</p>
+      <div class="footer-links"><a href="https://github.com/abdoabofr55-glitch" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/abdelbouhadrah"
+   target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <img src="assets/olive-branch.svg" alt="" class="footer-branch">
+    </div>
+  </footer>
+</body>
+</html>

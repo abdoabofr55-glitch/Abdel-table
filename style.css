@@ -1,0 +1,68 @@
+* { box-sizing:border-box; }
+body { margin:0; min-height:100vh; display:flex; flex-direction:column; background:#fbf5e5; color:#30321d; font:16px/1.5 Georgia,serif; }
+a { color:inherit; }
+.site-header,main { width:92%; max-width:1200px; margin:0 auto; }
+.site-header { display:flex; justify-content:space-between; align-items:center; padding:18px 0; }
+.brand { display:flex; align-items:center; gap:8px; color:#30321d; font:bold 28px cursive; text-decoration:none; }
+.brand img { width:48px; }
+nav,.footer-links { display:flex; gap:24px; }
+nav a,.footer-links a { color:#454536; text-decoration:none; }
+nav a:hover,.footer-links a:hover { color:#b94e1f; }
+main { flex:1; }
+.home-main,.order-main { padding:14px 0 28px; }
+.hero { position:relative; padding:12px 0 30px; text-align:center; }
+.eyebrow { margin:0 0 10px; color:#ae5029; font:bold 12px Arial,sans-serif; letter-spacing:3px; }
+h1,h2 { font-family:Georgia,serif; line-height:1.12; }
+h1 { max-width:850px; margin:0 auto 18px; font-size:52px; }
+h2 { margin:0 0 10px; font-size:30px; }
+p { margin-top:0; }
+.button { display:inline-block; padding:12px 24px; border-radius:4px; background:#bd5425; color:white; font:bold 15px Arial,sans-serif; text-decoration:none; }
+.button:hover { background:#98401a; }
+.city-art { position:absolute; right:0; bottom:4px; width:180px; }
+.carousel { position:relative; height:390px; overflow:hidden; border-radius:8px; background:#d1b48c; }
+.carousel-picture { position:absolute; inset:0; background:center/cover no-repeat; }
+.carousel-caption { position:absolute; right:0; bottom:0; left:0; padding:36px 24px 16px; background:linear-gradient(transparent,rgba(25,35,29,.65)); color:white; }
+.carousel-caption p { margin:0; font:bold 24px Georgia,serif; }
+.carousel-arrow { position:absolute; top:50%; width:40px; height:40px; transform:translateY(-50%); border:0; border-radius:50%; background:#fff9; font-size:26px; cursor:pointer; }
+.previous { left:14px; } .next { right:14px; }
+.carousel-controls { display:flex; justify-content:center; align-items:center; gap:20px; padding:12px 0; }
+.dots { display:flex; gap:10px; }
+.dots i { width:11px; height:11px; border-radius:50%; background:#d3cdb5; }
+.dots i:first-child { background:#687044; }
+.text-button { border:0; border-radius:50%; padding:8px 12px; background:#d7d2b8; color:#30321d; cursor:pointer; }
+.welcome-card,.menu-panel,.order-summary { padding:22px; border:1px solid #e5decd; background:#fffdf8; }
+.order-intro { padding:12px 0 24px; text-align:center; }
+.order-intro>p:last-child,.menu-item p,.summary-help,.receipt-item small { color:#696957; }
+.order-layout { display:grid; grid-template-columns:2fr 1fr; gap:22px; align-items:start; }
+.menu-list { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.section-heading { display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
+.tax-note { color:#696957; font-size:13px; }
+.menu-item,.summary-line,.receipt-item { display:flex; justify-content:space-between; gap:12px; }
+.menu-item { padding:14px 0; border-bottom:1px solid #e5decd; }
+.menu-item h3 { margin:0 0 5px; font:bold 17px Georgia,serif; }
+.menu-item p { margin:0; font:13px Arial,sans-serif; }
+.item-price { display:block; margin-top:6px; color:#48552d; font-weight:bold; }
+.quantity { width:72px; height:40px; align-self:center; padding:6px; border:1px solid #c9c6b9; border-radius:4px; }
+.form-message { min-height:20px; margin:14px 0 0; color:#a33b2f; }
+.generate-button { width:100%; }
+.summary-line,.receipt-box { margin-top:14px; padding-top:12px; border-top:1px solid #e5decd; }
+.summary-total,.receipt-total { color:#48552d; font-weight:bold; }
+.receipt-item { margin:12px 0; }
+.receipt-total { padding-top:10px; border-top:1px solid #e5decd; }
+.site-footer { margin-top:auto; padding:14px 5%; background:#e7e5c8; color:#4d4d35; font:13px Arial,sans-serif; }
+.footer-weather,.footer-bottom { display:flex; justify-content:space-between; align-items:center; gap:16px; }
+.footer-weather { padding-bottom:10px; border-bottom:1px solid #cfceb0; }
+.footer-bottom { padding-top:10px; }
+.footer-bottom p { margin:0; }
+.footer-branch { width:45px; }
+@media (max-width:700px) {
+  .brand { font-size:22px; }
+  .brand img { width:38px; }
+  nav,.footer-links { gap:12px; }
+  .hero { padding-bottom:18px; }
+  h1 { font-size:36px; }
+  .city-art { display:none; }
+  .carousel { height:250px; }
+  .order-layout,.menu-list { grid-template-columns:1fr; }
+  .footer-weather,.footer-bottom { flex-direction:column; }
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Choose family-style Libyan favourites from Abdel’s Table and create a sample order receipt.">
+  <title>Menu & Order | Abdel’s Table</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/olive-branch.svg" alt="">Abdel’s Table</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html" aria-current="page">Menu</a>
+    </nav>
+  </header>
+
+  <main class="order-main">
+    <section class="order-intro">
+      <p class="eyebrow">FROM OUR FAMILY KITCHEN</p>
+      <h1>Choose what feels like home.</h1>
+      <p>Pick your favourites. Your total updates while you build your order.</p>
+    </section>
+
+    <div class="order-layout">
+      <section class="menu-panel" aria-labelledby="food-heading">
+        <div class="section-heading"><div><p class="eyebrow">THE MENU</p><h2 id="food-heading">Libyan family favourites</h2></div><span class="tax-note">Prices in CAD</span></div>
+        <form id="order-form">
+          <div class="menu-list" id="menu-list"></div>
+          <p class="form-message" id="form-message" role="alert"></p>
+          <button class="button generate-button" type="submit">Generate Receipt</button>
+        </form>
+      </section>
+
+      <aside class="order-summary" aria-live="polite">
+        <p class="eyebrow">YOUR ORDER</p>
+        <h2>Order total</h2>
+        <p class="summary-help">Includes 5% GST.</p>
+        <div class="summary-line"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+        <div class="summary-line"><span>GST (5%)</span><span id="tax">$0.00</span></div>
+        <div class="summary-line summary-total"><span>Total</span><span id="total">$0.00</span></div>
+        <div class="receipt-box" id="receipt" hidden></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-weather" aria-live="polite"><span>📍 Calgary, AB</span><span id="weather">Weather loading…</span><span id="clock">Calgary time loading…</span></div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Abdel’s Table · Calgary</p>
+      <div class="footer-links"><a href="https://github.com/abdoabofr55-glitch" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/learning/" target="_blank" rel="noreferrer">LinkedIn</a></div><img src="assets/olive-branch.svg" alt="" class="footer-branch">
+    </div>
+  </footer>
+</body>
+</html>
